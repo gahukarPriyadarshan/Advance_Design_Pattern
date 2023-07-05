@@ -1,0 +1,9 @@
+<hibernate-mapping>
+    <class name="beans.Patient" table="patient" schema="public">
+        <id name="id"></id>
+        <property name="name"></property>
+        <property name="address"></property>
+        <property name="doctor"></property>
+        <property name="fees"></property>
+    </class>
+</hibernate-mapping>

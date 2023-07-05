@@ -1,0 +1,8 @@
+<hibernate-mapping>
+    <class name="beans.Student" table="student" schema="public">
+        <id name="sturollno"></id>
+        <property name="stuname" ></property>
+        <property name="stumail" ></property>
+        <property name="stumarks" ></property>
+    </class>
+</hibernate-mapping>

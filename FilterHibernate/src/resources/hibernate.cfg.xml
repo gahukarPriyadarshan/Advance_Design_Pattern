@@ -1,0 +1,17 @@
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/student</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">rcoem</property>
+        <property name="connection.pool_size">10</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+
+        <mapping resource="resources/student.hbm.xml"/>
+
+    </session-factory>
+</hibernate-configuration>
