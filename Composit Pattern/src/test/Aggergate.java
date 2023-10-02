@@ -36,7 +36,7 @@ public class Aggergate {
         Query sumFeesQuery = session.createQuery("SELECT SUM(fees) FROM NewPatient");
         Object sumFees = sumFeesQuery.getSingleResult();
 
-        System.out.println("************************************************************************");
+        System.out.println("//////////////////////////////////////////////////////////////////////////");
         System.out.println();
         System.out.println("Maximum fees of Patient -> " + maxFees);
         System.out.println("Minimum fees of Patient -> " + minFees);
@@ -45,7 +45,7 @@ public class Aggergate {
         System.out.println("Total number of Distinct Patients -> " + empDisCount);
         System.out.println("Total sum of fees of all Patients -> " + sumFees);
         System.out.println();
-        System.out.println("************************************************************************");
+        System.out.println("//////////////////////////////////////////////////////////////////////////");
 
         session.close();
         sessionFactory.close();

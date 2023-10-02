@@ -10,9 +10,9 @@ class JDBCMain {
         String dbPass ="rcoem";
 
         Connection conn =dbmsFunctions.connect_to_database(dbUrl,dbUser,dbPass);
- //       dbmsFunctions.createTable(conn, "lemployee");
+//        dbmsFunctions.createTable(conn, "lemployee");
 //        dbmsFunctions.deleteEmployee(conn,1);
-  //      dbmsFunctions.insertData(conn,"employee",10,"Vickey","Chandrapur",4526.22);
+//        dbmsFunctions.insertData(conn,"employee",10,"Vickey","Chandrapur",4526.22);
         dbmsFunctions.getData(conn,"employee");
         try{
         conn.close();
